@@ -1,0 +1,206 @@
+.relative {
+  position: relative;
+}
+.baloon {
+  position: absolute;
+  top: 50px;
+  -webkit-animation: fly 10s infinite linear;
+  left: 20px;
+  display: block;
+  -webkit-animation-delay: 0s;
+}
+.baloon:first-of-type {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.baloon:nth-child(2) {
+  -webkit-animation-delay: 2s;
+}
+@-webkit-keyframes fly {
+  0% {
+    left: -5%;
+    top: 50px;
+  }
+  50% {
+    left: 40%;
+    top: 30px;
+  }
+  100% {
+    left: 100%;
+    top: 10px;
+  }
+}
+.question-and-means-payment #wrapper {
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 550px;
+  padding-top: 30px;
+  margin-left: 36px;
+}
+.question-and-means-payment #wrapper .active {
+  background-color: #fc6e51;
+}
+.question-and-means-payment #wrapper div {
+  display: none;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.question-and-means-payment #wrapper span {
+  border: 1px solid #d8dadc;
+  padding: 10px 30px 8px 30px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  margin-left: 10px;
+  font-family: Arial;
+}
+.question-and-means-payment #wrapper span:hover,
+.question-and-means-payment #wrapper span:active {
+  background-color: #fc6e51;
+}
+.question-and-means-payment #wrapper span:first-child {
+  margin-left: 20px;
+}
+.question-and-means-payment #wrapper.tab1 div.tab1,
+.question-and-means-payment #wrapper.tab2 div.tab2,
+.question-and-means-payment #wrapper.tab3 div.tab3,
+.question-and-means-payment #wrapper.tab4 div.tab4 {
+  display: block;
+  width: 100%;
+}
+.question-and-means-payment #wrapper.tab1 span.tab1,
+.question-and-means-payment #wrapper.tab2 span.tab2,
+.question-and-means-payment #wrapper.tab3 span.tab3,
+.question-and-means-payment #wrapper.tab4 span.tab4 {
+  color: black;
+  cursor: default;
+  font-weight: bold;
+  text-decoration: none;
+}
+.slider .owl-size {
+  min-width: 259px;
+  max-height: 259px;
+  height: 259px;
+}
+.slider .owl-size img {
+  padding: 8px;
+}
+.instructors .img-circle {
+  width: 160px;
+  height: 160px;
+}
+.instructors .instructor-icon {
+  background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+  width: 70px;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  height: 70px;
+}
+.instructors #pilot1 {
+  background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+  width: 70px;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  height: 70px;
+  background-position: 0 0;
+}
+.instructors #pilot2 {
+  background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+  width: 70px;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  height: 70px;
+  background-position: 0 0;
+}
+.instructors #dispatcher {
+  background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+  width: 70px;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  height: 70px;
+  background-position: 145px 0;
+}
+.instructors #technician {
+  background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+  width: 70px;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  height: 70px;
+  background-position: 72px 0;
+}
+.reviews .owl-size_img {
+  width: 100px;
+}
+.contacts {
+  line-height: 26px;
+}
+.contacts h5 {
+  font-family: "FiraSans-Medium";
+  font-size: 22px;
+}
+.contacts span {
+  font-family: "FiraSans-Italic";
+  font-size: 20px;
+}
+.contacts span.tel {
+  font-family: "FiraSans-Medium";
+  font-size: 26px;
+}
+.contacts span.mail {
+  font-size: 22px;
+  font-family: "FiraSans-Regular";
+  width: 23px;
+  height: 17px;
+  padding-left: 25px;
+  background-image: url(../pict/big/icons/mail.png);
+  background-position: 16px 30px;
+  background-repeat: ;
+}
+.contacts a {
+  background-image: url(../pict/big/icons/adress-icon-sprite.png);
+  width: 22px;
+  max-height: 23px;
+}
+.contacts a.vk {
+  background-position: 20px 30px;
+}
+/*       __ ____                    _____ __       ______ 
+     _/_//_/ /_  ___  ____  ___  / __(_) /______/ ____ \
+   _/_//_// __ \/ _ \/ __ \/ _ \/ /_/ / __/ ___/ / __ `/
+ _/_//_/ / /_/ /  __/ / / /  __/ __/ / /_(__  ) / /_/ / 
+/_//_/  /_.___/\___/_/ /_/\___/_/ /_/\__/____/\ \__,_/  
+                                               \____/   
+                                        */
+@media (min-width: 992px) {
+  .benefit-item:nth-child(2),
+  .benefit-item:nth-child(3) {
+    margin-top: 35px;
+  }
+}
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.nav-menu li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.nav-menu a {
+  display: inline-block;
+  padding: 4px 8px;
+}
+.sandwitch {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background-image: url(../pict/img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+}

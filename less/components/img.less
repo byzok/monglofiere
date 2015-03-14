@@ -1,0 +1,45 @@
+.slider {
+  .owl-size {
+    min-width: 259px;
+    max-height: 259px;
+    height: 259px;
+    img{
+      padding: 8px;
+    } 
+  }
+}
+.instructors {
+ & .img-circle{
+    width: 160px;
+    height: 160px;
+  }
+  .instructor-icon {
+    background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+    width: 70px;
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    height: 70px;
+   }
+  #pilot1 {
+    .instructor-icon();
+    background-position: 0 0;
+   }
+   #pilot2 {
+    .instructor-icon();
+    background-position: 0 0;
+   }
+   #dispatcher {
+    .instructor-icon();
+    background-position: 145px 0;
+   }
+   #technician {
+    .instructor-icon();
+    background-position: 72px 0;
+  }
+}
+.reviews {
+  .owl-size_img {
+    width: 100px;
+  }
+}

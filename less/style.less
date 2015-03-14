@@ -1,0 +1,39 @@
+@import "variables.less";
+@import "mixin.less";
+@import "layout.less";
+@import "animations.less";
+@import "components/tabs-collapse.less";
+@import "components/img.less";
+@import "components/contacts.less";
+
+//добавляем респонсив  вконце
+
+
+@import "responsive.less";
+
+.nav-menu {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  li {
+  margin:0;
+  padding: 0;
+  display: inline-block;
+  }
+  a {
+  display: inline-block;
+  padding: 4px 8px;
+  &:hover{ }
+  }
+}
+.sandwitch{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background-image: url(../pict/img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+}

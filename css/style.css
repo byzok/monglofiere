@@ -2,7 +2,7 @@
   font-family: "FiraSans-Regular";
   font-size: 18px;
   line-height: 24px;
-  color: #000;
+  color: #444444;
 }
 .relative {
   position: relative;
@@ -66,12 +66,18 @@
 .question-and-means-payment #wrapper {
   border-radius: 3px;
   background-color: #ffffff;
-  width: 550px;
   padding-top: 30px;
-  margin-left: 36px;
+  font-family: "FiraSans-Regular";
+  font-size: 18px;
+  line-height: 24px;
+  color: #444444;
 }
-.question-and-means-payment #wrapper .active {
-  background-color: #fc6e51;
+.question-and-means-payment #wrapper i {
+  text-decoration: underline;
+}
+.question-and-means-payment #wrapper .active,
+.question-and-means-payment #wrapper .active:hover {
+  background-color: #ec5f5f;
 }
 .question-and-means-payment #wrapper div {
   display: none;
@@ -82,13 +88,14 @@
   border: 1px solid #d8dadc;
   padding: 10px 30px 8px 30px;
   cursor: pointer;
-  border-radius: 5px 5px 0 0;
   margin-left: 10px;
   font-family: "FiraSans-Regular";
+  background-color: #d8dadc;
 }
 .question-and-means-payment #wrapper span:hover,
 .question-and-means-payment #wrapper span:active {
-  background-color: #fc6e51;
+  background-color: #ec5f5f;
+  color: #ffffff;
 }
 .question-and-means-payment #wrapper span:first-child {
   margin-left: 20px;
@@ -109,6 +116,20 @@
   font-weight: bold;
   text-decoration: none;
 }
+.panel-group .accordion-toggle {
+  font-family: "FiraSans-Regular";
+  font-size: 18px;
+  line-height: 24px;
+  color: #444444;
+}
+.panel-group .panel-body {
+  font-family: "FiraSans-Regular";
+  font-size: 18px;
+  line-height: 24px;
+  color: #444444;
+  font-family: "FiraSans-Italic";
+  font-size: 16px;
+}
 .slider {
   margin-top: 98px;
   margin-bottom: 53px;
@@ -119,53 +140,38 @@
 .slider .owl-stage-outer {
   height: 240px;
 }
-.instructors .img-circle {
-  width: 160px;
+.instructors {
+  /*.instructor-icon {
+    background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+    width: 70px;
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    height: 70px;
+   }
+  #pilot1 {
+    .instructor-icon();
+    background-position: 0 0;
+   }
+   #pilot2 {
+    .instructor-icon();
+    background-position: 0 0;
+   }
+   #dispatcher {
+    .instructor-icon();
+    background-position: 145px 0;
+   }
+   #technician {
+    .instructor-icon();
+    background-position: 72px 0;
+  }*/
+}
+.instructors .instructor-foto {
+  width: 180px;
   height: 160px;
 }
-.instructors .instructor-icon {
-  background-image: url(../pict/big/icons/instructor-icon-sprite.png);
-  width: 70px;
-  position: absolute;
-  top: 100px;
-  left: 120px;
-  height: 70px;
-}
-.instructors #pilot1 {
-  background-image: url(../pict/big/icons/instructor-icon-sprite.png);
-  width: 70px;
-  position: absolute;
-  top: 100px;
-  left: 120px;
-  height: 70px;
-  background-position: 0 0;
-}
-.instructors #pilot2 {
-  background-image: url(../pict/big/icons/instructor-icon-sprite.png);
-  width: 70px;
-  position: absolute;
-  top: 100px;
-  left: 120px;
-  height: 70px;
-  background-position: 0 0;
-}
-.instructors #dispatcher {
-  background-image: url(../pict/big/icons/instructor-icon-sprite.png);
-  width: 70px;
-  position: absolute;
-  top: 100px;
-  left: 120px;
-  height: 70px;
-  background-position: 145px 0;
-}
-.instructors #technician {
-  background-image: url(../pict/big/icons/instructor-icon-sprite.png);
-  width: 70px;
-  position: absolute;
-  top: 100px;
-  left: 120px;
-  height: 70px;
-  background-position: 72px 0;
+.instructors .instructor-foto img {
+  width: 100%;
 }
 .reviews .owl-size_img {
   width: 100px;
@@ -236,7 +242,7 @@ footer.clearfix a {
   font-family: "FiraSans-Regular";
   font-size: 18px;
   line-height: 24px;
-  color: #000;
+  color: #444444;
   font-weight: bold;
 }
 .benefits img {
@@ -249,7 +255,7 @@ footer.clearfix a {
   font-family: "FiraSans-Regular";
   font-size: 18px;
   line-height: 24px;
-  color: #000;
+  color: #444444;
 }
 .briefly iframe {
   box-shadow: 0px 8px 8px 0px rgba(50, 50, 50, 0.75);
@@ -262,7 +268,6 @@ footer.clearfix a {
   font-family: "FiraSans-Regular";
   font-size: 18px;
   line-height: 24px;
-  color: #000;
   color: #444444;
   font-family: "FiraSans-Italic";
 }
@@ -270,20 +275,20 @@ footer.clearfix a {
   font-family: "FiraSans-Regular";
   font-size: 18px;
   line-height: 24px;
-  color: #000;
   color: #444444;
 }
 .price form {
+  font-family: "FiraSans-Regular";
+  font-size: 18px;
+  line-height: 24px;
+  color: #444444;
   margin-top: 60px;
-}
-.price form .prise-width {
-  width: 200px;
 }
 .price form .row {
   margin-bottom: 20px;
 }
 .price form .flight-route select {
-  width: 350px;
+  width: 100%;
 }
 .price form .number-of-persons select {
   width: 96px;
@@ -299,8 +304,10 @@ footer.clearfix a {
   appearance: none;
 }
 .price form input {
+  margin-left: ;
   border-radius: 3px;
   height: 35px;
+  width: 100%;
   background-position: 7px 7px;
   background-repeat: no-repeat;
   padding-left: 30px;
@@ -310,6 +317,23 @@ footer.clearfix a {
 }
 .price form .phone input {
   background-image: url(../pict/big/icons/form-icon-phone.png);
+}
+.price-end .price-red-big {
+  color: #f97e7e;
+  font-family: "FiraSans-Medium";
+  font-size: 34px;
+  line-height: 24px;
+  position: relative;
+  top: 5px;
+}
+.price-end .btn {
+  background-color: #46b0dc;
+  color: #fff;
+  font-family: "FiraSans-Medium";
+  font-size: 18px;
+  border-radius: 3px;
+  line-height: 24px;
+  float: right;
 }
 .flight-plan {
   margin-top: 53px;
@@ -371,6 +395,33 @@ footer.clearfix a {
   background-position: center 0px;
   background-image: url(../pict/big/bg/bgbg.png);
   background-repeat: no-repeat;
+}
+.number-of-flights {
+  background-image: url(../pict/big/bg/bg-number-of-flights.jpg);
+  min-height: 375px;
+  background-position: center -320px;
+  background-repeat: no-repeat;
+}
+.number-of-flights .circle {
+  font-family: "FiraSans-Regular";
+  font-size: 18px;
+  line-height: 24px;
+  color: #444444;
+  width: 160px;
+  height: 160px;
+  border: 6px solid #fff;
+  border-radius: 80px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  line-height: 160px;
+}
+.number-of-flights p {
+  margin-top: 25px;
+  font-family: "FiraSans-Medium";
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
 }
 /*       __ ____                    _____ __       ______ 
      _/_//_/ /_  ___  ____  ___  / __(_) /______/ ____ \

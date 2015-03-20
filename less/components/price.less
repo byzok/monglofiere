@@ -5,25 +5,21 @@
     .format-text();
     color: #444444;
     font-family: "FiraSans-Italic";
-    //padding-left: 0;
-  }
+   }
   & .description{
-  	//padding-left: 0;
   }
   .parameter {
     .format-text();
     color: #444444;
   }
   form {
-     .prise-width {
-      width: 200px;
-    }
+    .format-text();
     margin-top: 60px;
     .row {
       margin-bottom: 20px;
     }
-    .flight-route select{
-        width: 350px;
+    .flight-route select {
+        width: 100%;
       }
       .number-of-persons select {
         width: 96px;
@@ -39,8 +35,10 @@
       appearance:none;
     }
     input {
+      margin-left: ;
       border-radius:@bdrs;
       height: 35px;
+      width: 100%;
       padding-left: 30px;
       background-position: 7px 7px;
       background-repeat: no-repeat;
@@ -52,6 +50,24 @@
     .phone input {
       background-image: url(../pict/big/icons/form-icon-phone.png);
     }
-    
   }
+}
+.price-end {
+  .price-red-big {
+    color: #f97e7e;
+    font-family: "FiraSans-Medium";
+    font-size: 34px;
+    line-height: 24px;
+    position: relative;
+    top: 5px;
+  }
+  & .btn{
+    background-color: #46b0dc;
+    color: #fff;
+    font-family: "FiraSans-Medium";
+    font-size: 18px;
+    border-radius:@bdrs;
+    line-height: 24px;
+    float: right;
+  }   
 }

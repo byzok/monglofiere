@@ -1,29 +1,47 @@
-/*.somit-promo {height: 645px;background-position: -10px -60px;
-  background-image: url(../pict/big/bg/bg-top.jpg);background-repeat: no-repeat;
-  .container {
- // background-position: -10px -60px;
-  //height: 645px;
+.somit-promo {
+  overflow: hidden;
+  h1 {
+    margin-top: 190px;
+    font-family:"FiraSans-Medium";
+    font-size: 66px;
+
   }
-}*/
-/*.triangle1 {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    //triangle
-    border-width: 120px 0 80px 800px;
-    border-color: transparent transparent transparent #fff;
-    position: relative;
-    top: 197px;
-    left: -15px;
-  }
-.triangle2 {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  //triangle
-  border-width: 0 0px 120px 800px;
-  border-color: transparent transparent #fff transparent;
+  .hoverline {
+  font-family:"FiraSans-Medium";
+  font-size: @font-size+4;
+  color: @white; 
   position: relative;
-  top: 77px;
-  right: -355px;
-} */
+
+  }
+  #hoverline1{
+    bottom: 280px;
+    left: 160px;
+  }
+  #hoverline2{
+    bottom: 250px;
+    right:290px;
+  }
+  #hoverline3{
+   bottom:10px;
+    left:440px;
+  }
+  #hoverline4{
+    bottom: 80px;
+    right:450px;
+  }
+  a.btn, a:hover.btn, a:active.btn{
+    .format-text();
+    color: @white;
+    border: 2px solid @white;
+  }
+  a:after {
+    content: "";
+    background-image: url(../pict/big/icons/arrow.png);
+    float: left;
+    
+  }
+ .arrow {
+  margin-top: 40px;
+ }
+
+}

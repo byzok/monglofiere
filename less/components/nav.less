@@ -3,7 +3,7 @@
 }
 header.clearfix, footer.clearfix {
   li {
-    color: #fff;
+    color: @white;
     padding: 10px 11px 8px 11px;
     margin-top: 19px;
     margin-bottom:  16px;
@@ -12,13 +12,47 @@ header.clearfix, footer.clearfix {
     &:hover, &:active {
       outline: 1px solid #fff;
     }
+    a {
+      color: @white;
+      &:hover, &:active{
+        text-decoration: none;
+        outline: none;
+      }
+    }
+
   }
-  a {
+  .logo {
     padding-top: 27px;
     padding-bottom: 26px;
-    color: #fff;
+    color: @white;
     cursor: pointer;
     font-family: "FiraSans-Medium";
     font-size: 22px;
   }
+}
+.nav-menu {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  li {
+  margin:0;
+  padding: 0;
+  display: inline-block;
+  }
+  a {
+  display: inline-block;
+  padding: 4px 8px;
+  &:hover{ }
+  }
+}
+.sandwitch{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background-image: url(../pict/img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
 }

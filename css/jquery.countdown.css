@@ -2,6 +2,7 @@
 .is-countdown {
   border: 0px solid #ccc;
   color: #fff;
+  padding-top: 25px;
   font-family: "FiraSans-Medium";
   font-size: 22px;
   height: 100px;

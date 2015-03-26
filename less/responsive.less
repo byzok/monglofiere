@@ -4,25 +4,181 @@
  _/_//_/ / /_/ /  __/ / / /  __/ __/ / /_(__  ) / /_/ / 
 /_//_/  /_.___/\___/_/ /_/\___/_/ /_/\__/____/\ \__,_/  
                                                \____/*/   
-                                        
-
-
-
-@media (min-width: 992px){
+@media (min-width:992px){
+  .promo-slogan {
+    width: 60%;
+}
   .benefit-item:nth-child(2),.benefit-item:nth-child(3){
     margin-top: 35px;
   }
-}
-
-@media (min-width: 768px){}
-.number-of-flights {
+  .number-of-flights {
     & .circle  {
+      .format-text();
+      margin: 0 auto;
+      width: 160px;
+      height: 160px;
       font-size: @font-size+18;
-      width: 95px;
-      height: 98px;
-      border: 5px solid red;
-      border-radius: 46px;
-      line-height:  45px;
+      border: 6px solid @white;
+      border-radius: 80px;
+      text-align: center;
+      color: @white;
+      line-height:  160px;
+    }
+    p {
+      max-width: 225px;
+      overflow: hidden;
+      margin-top: 25px;
+      font-family: "FiraSans-Medium";
+      font-size: 24px;
+      color: @white;
+      text-align: center;
     }
   }
 }
+@media (min-width:762px) and (max-width:992px){
+  .benefits {
+    .benefit-item{
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .benefit-label{
+      position: relative;
+      top: 15px;
+    }
+  }
+  .briefly {
+    margin-top: 40px;
+    iframe {
+      margin-top: 35px;
+      margin-bottom: 15px;
+    }
+    margin-bottom: 20px;
+  }
+  .slider{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    .owl-my {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+  .flight-plan {
+    margin-top: 30px;
+  }
+  .instructors {
+    margin-top: 55px;
+    margin-bottom: 0px;
+      .instructor-icon {
+        background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+        width: 74px;
+        position: absolute;
+        top: 120px;
+        left: 235px;
+        height: 75px;
+   }
+  #pilot1 {
+    .instructor-icon();
+    background-position: 0 0;
+   }
+   #pilot2 {
+    .instructor-icon();
+    background-position: 0 0;
+   }
+   #dispatcher {
+    .instructor-icon();
+    background-position: 147px 0;
+   }
+   #technician {
+    .instructor-icon();
+    background-position: 73px 0;
+    }
+  }
+  .reviews {
+    margin-top: 100px;
+  }
+.price { 
+  margin-top: 52px;
+  margin-bottom: 60px;
+  .price-form{ 
+  background-image: url(../pict/big/bg/bg-price.jpg);
+  }
+  form{
+    padding: 27px 27px 0 27px;
+    margin: 25px 92px;
+    background-color: @white;
+    .btn {
+      margin-top: 20px;
+      margin-bottom: 27px;
+    }
+  }
+}
+.question-and-means-payment {
+  margin-bottom: 60px; 
+}
+.slider {
+  .owl-prev {
+    bottom: 140px;
+    right: 90px;
+  }
+  .owl-next {
+    bottom: 180px;
+    left: 320px;
+  }
+}
+
+
+.number-of-flights {
+  .circle  {
+    width: 90px;
+    height: 90px;
+    font-size: @font-size+5;
+    border: 5px solid green;
+    border-radius: 45px;
+    text-align: center;
+    span { 
+      position: relative;
+      bottom: 40px;
+    }
+  }
+  p {
+    max-width: 250px;
+    overflow: hidden;
+    margin-top: 25px;
+    font-family: "FiraSans-Medium";
+    font-size: 22px;
+    color: @white;
+    text-align: center;
+    }
+  }
+}
+@media (min-width:360px) and (max-width:762px){
+  .number-of-flights {
+    .row {
+      margin-top: 35px;
+    }
+    .circle  {
+      .format-text();
+      margin: 13px auto;
+      width: 80px;
+      height: 80px;
+      font-size: @font-size+8;
+      border: 6px solid @white;
+      border-radius: 40px;
+      color: @white;
+      float: left;
+      padding-top: 25px;
+      display: inline-block;
+    }
+    p {
+      max-width: 250px;
+      overflow: hidden;
+      padding-top: 10px;
+      padding-left: 20px;
+      font-family: "FiraSans-Medium";
+      font-size: 24px;
+      color: @white;
+      text-align: left;
+    }
+  }
+}
+

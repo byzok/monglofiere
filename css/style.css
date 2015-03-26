@@ -169,53 +169,54 @@
 .instructors .instructor-foto {
   width: 180px;
   height: 160px;
+  margin: 0 auto;
 }
 .instructors .instructor-foto img {
   width: 100%;
 }
 .instructors .instructor-icon {
   background-image: url(../pict/big/icons/instructor-icon-sprite.png);
-  width: 70px;
+  width: 74px;
   position: absolute;
   top: 120px;
-  left: 145px;
-  height: 70px;
+  left: 175px;
+  height: 75px;
 }
 .instructors #pilot1 {
   background-image: url(../pict/big/icons/instructor-icon-sprite.png);
-  width: 70px;
+  width: 74px;
   position: absolute;
   top: 120px;
-  left: 145px;
-  height: 70px;
+  left: 175px;
+  height: 75px;
   background-position: 0 0;
 }
 .instructors #pilot2 {
   background-image: url(../pict/big/icons/instructor-icon-sprite.png);
-  width: 70px;
+  width: 74px;
   position: absolute;
   top: 120px;
-  left: 145px;
-  height: 70px;
+  left: 175px;
+  height: 75px;
   background-position: 0 0;
 }
 .instructors #dispatcher {
   background-image: url(../pict/big/icons/instructor-icon-sprite.png);
-  width: 70px;
+  width: 74px;
   position: absolute;
   top: 120px;
-  left: 145px;
-  height: 70px;
-  background-position: 145px 0;
+  left: 175px;
+  height: 75px;
+  background-position: 147px 0;
 }
 .instructors #technician {
   background-image: url(../pict/big/icons/instructor-icon-sprite.png);
-  width: 70px;
+  width: 74px;
   position: absolute;
   top: 120px;
-  left: 145px;
-  height: 70px;
-  background-position: 72px 0;
+  left: 175px;
+  height: 75px;
+  background-position: 73px 0;
 }
 .reviews .owl-size_img {
   width: 100px;
@@ -411,11 +412,11 @@ footer.clearfix .logo {
   margin-top: 40px;
 }
 .benefits {
-  margin-top: 62px;
   font-family: "FiraSans-Regular";
   font-size: 18px;
   line-height: 24px;
   color: #444444;
+  margin-top: 62px;
   font-weight: bold;
 }
 .benefits img {
@@ -598,13 +599,14 @@ footer.clearfix .logo {
   font-size: 18px;
   line-height: 24px;
   color: #444444;
+  margin: 0 auto;
   width: 160px;
   height: 160px;
+  font-size: 36px;
   border: 6px solid #fff;
   border-radius: 80px;
   text-align: center;
   color: #ffffff;
-  margin: 0 auto;
   line-height: 160px;
 }
 .number-of-flights p {
@@ -651,23 +653,202 @@ footer.clearfix .logo {
 /_//_/  /_.___/\___/_/ /_/\___/_/ /_/\__/____/\ \__,_/  
                                                \____/*/
 @media (min-width: 992px) {
+  .promo-slogan {
+    width: 60%;
+  }
   .benefit-item:nth-child(2),
   .benefit-item:nth-child(3) {
     margin-top: 35px;
   }
+  .number-of-flights .circle {
+    font-family: "FiraSans-Regular";
+    font-size: 18px;
+    line-height: 24px;
+    color: #444444;
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+    font-size: 36px;
+    border: 6px solid #ffffff;
+    border-radius: 80px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 160px;
+  }
+  .number-of-flights p {
+    max-width: 225px;
+    overflow: hidden;
+    margin-top: 25px;
+    font-family: "FiraSans-Medium";
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+  }
 }
-.number-of-flights .circle {
-  font-size: 36px;
-  width: 95px;
-  height: 98px;
-  border: 5px solid red;
-  border-radius: 46px;
-  line-height: 45px;
+@media (min-width: 762px) and (max-width: 992px) {
+  .benefits .benefit-item {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .benefits .benefit-label {
+    position: relative;
+    top: 15px;
+  }
+  .briefly {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .briefly iframe {
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+  .slider {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+  .slider .owl-my {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .flight-plan {
+    margin-top: 30px;
+  }
+  .instructors {
+    margin-top: 55px;
+    margin-bottom: 0px;
+  }
+  .instructors .instructor-icon {
+    background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+    width: 74px;
+    position: absolute;
+    top: 120px;
+    left: 235px;
+    height: 75px;
+  }
+  .instructors #pilot1 {
+    background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+    width: 74px;
+    position: absolute;
+    top: 120px;
+    left: 235px;
+    height: 75px;
+    background-position: 0 0;
+  }
+  .instructors #pilot2 {
+    background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+    width: 74px;
+    position: absolute;
+    top: 120px;
+    left: 235px;
+    height: 75px;
+    background-position: 0 0;
+  }
+  .instructors #dispatcher {
+    background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+    width: 74px;
+    position: absolute;
+    top: 120px;
+    left: 235px;
+    height: 75px;
+    background-position: 147px 0;
+  }
+  .instructors #technician {
+    background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+    width: 74px;
+    position: absolute;
+    top: 120px;
+    left: 235px;
+    height: 75px;
+    background-position: 73px 0;
+  }
+  .reviews {
+    margin-top: 100px;
+  }
+  .price {
+    margin-top: 52px;
+    margin-bottom: 60px;
+  }
+  .price .price-form {
+    background-image: url(../pict/big/bg/bg-price.jpg);
+  }
+  .price form {
+    padding: 27px 27px 0 27px;
+    margin: 25px 92px;
+    background-color: #ffffff;
+  }
+  .price form .btn {
+    margin-top: 20px;
+    margin-bottom: 27px;
+  }
+  .question-and-means-payment {
+    margin-bottom: 60px;
+  }
+  .slider .owl-prev {
+    bottom: 140px;
+    right: 90px;
+  }
+  .slider .owl-next {
+    bottom: 180px;
+    left: 320px;
+  }
+  .number-of-flights .circle {
+    width: 90px;
+    height: 90px;
+    font-size: 23px;
+    border: 5px solid green;
+    border-radius: 45px;
+    text-align: center;
+  }
+  .number-of-flights .circle span {
+    position: relative;
+    bottom: 40px;
+  }
+  .number-of-flights p {
+    max-width: 250px;
+    overflow: hidden;
+    margin-top: 25px;
+    font-family: "FiraSans-Medium";
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+@media (min-width: 360px) and (max-width: 762px) {
+  .number-of-flights .row {
+    margin-top: 35px;
+  }
+  .number-of-flights .circle {
+    font-family: "FiraSans-Regular";
+    font-size: 18px;
+    line-height: 24px;
+    color: #444444;
+    margin: 13px auto;
+    width: 80px;
+    height: 80px;
+    font-size: 26px;
+    border: 6px solid #ffffff;
+    border-radius: 40px;
+    color: #ffffff;
+    float: left;
+    padding-top: 25px;
+    display: inline-block;
+  }
+  .number-of-flights p {
+    max-width: 250px;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: "FiraSans-Medium";
+    font-size: 24px;
+    color: #ffffff;
+    text-align: left;
+  }
 }
 .promo-slogan {
   font-family: "FiraSans-Medium";
   font-size: 66px;
   color: #fff;
+  margin: 0 auto;
 }
 .wrapper-main {
   margin: 0 auto;

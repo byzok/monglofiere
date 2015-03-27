@@ -252,9 +252,6 @@
   font-family: "FiraSans-Medium";
   font-size: 22px;
 }
-.contacts .adress {
-  padding-left: 40px;
-}
 .contacts .adress:before {
   content: "";
   float: left;
@@ -282,7 +279,7 @@
   line-height: 24px;
   color: #444444;
   font-size: 22px;
-  margin-left: 50px;
+  margin-left: 0px;
   text-decoration: underline;
 }
 .contacts .mail:before {
@@ -298,7 +295,6 @@
   margin: 5px;
 }
 .contacts .link-social {
-  margin-left: 45px;
   margin-top: 25px;
 }
 .somit,
@@ -366,36 +362,38 @@ footer.clearfix .logo {
 .somit-promo {
   overflow: hidden;
 }
-.somit-promo h1 {
+.somit-promo .promo-slogan {
   margin-top: 190px;
   font-family: "FiraSans-Medium";
-  font-size: 66px;
+  font-size: 54px;
+  color: #fff;
+  margin: 0 auto;
 }
-.somit-promo .hoverline {
+.hoverline {
   font-family: "FiraSans-Medium";
   font-size: 22px;
   color: #ffffff;
   position: relative;
 }
-.somit-promo #hoverline1 {
+#hoverline1 {
   bottom: 280px;
   left: 160px;
 }
-.somit-promo #hoverline2 {
+#hoverline2 {
   bottom: 250px;
   right: 290px;
 }
-.somit-promo #hoverline3 {
+#hoverline3 {
   bottom: 10px;
   left: 440px;
 }
-.somit-promo #hoverline4 {
+#hoverline4 {
   bottom: 80px;
   right: 450px;
 }
-.somit-promo a.btn,
-.somit-promo a:hover.btn,
-.somit-promo a:active.btn {
+a.btn,
+a:hover.btn,
+a:active.btn {
   font-family: "FiraSans-Regular";
   font-size: 18px;
   line-height: 24px;
@@ -403,12 +401,12 @@ footer.clearfix .logo {
   color: #ffffff;
   border: 2px solid #ffffff;
 }
-.somit-promo a:after {
+a:after {
   content: "";
   background-image: url(../pict/big/icons/arrow.png);
   float: left;
 }
-.somit-promo .arrow {
+.arrow {
   margin-top: 40px;
 }
 .benefits {
@@ -646,12 +644,6 @@ footer.clearfix .logo {
 .reviews .underlined {
   margin: 0 auto;
 }
-/*       __ ____                    _____ __       ______ 
-     _/_//_/ /_  ___  ____  ___  / __(_) /______/ ____ \
-   _/_//_// __ \/ _ \/ __ \/ _ \/ /_/ / __/ ___/ / __ `/
- _/_//_/ / /_/ /  __/ / / /  __/ __/ / /_(__  ) / /_/ / 
-/_//_/  /_.___/\___/_/ /_/\___/_/ /_/\__/____/\ \__,_/  
-                                               \____/*/
 @media (min-width: 992px) {
   .promo-slogan {
     width: 60%;
@@ -686,6 +678,9 @@ footer.clearfix .logo {
   }
 }
 @media (min-width: 762px) and (max-width: 992px) {
+  .somit .sandwitch {
+    margin-top: 25px;
+  }
   .benefits .benefit-item {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -709,6 +704,22 @@ footer.clearfix .logo {
   .slider .owl-my {
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  .slider .owl-stage-outer {
+    height: 415px;
+  }
+  .slider .owl-nav {
+    height: 0;
+  }
+  .slider .owl-prev {
+    width: 20px;
+    bottom: 225px;
+    left: 20px;
+  }
+  .slider .owl-next {
+    width: 20px;
+    bottom: 270px;
+    left: 670px;
   }
   .flight-plan {
     margin-top: 30px;
@@ -766,12 +777,14 @@ footer.clearfix .logo {
   }
   .price {
     margin-top: 52px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .price .price-form {
+    margin-top: 30px;
     background-image: url(../pict/big/bg/bg-price.jpg);
   }
   .price form {
+    border-radius: 3px;
     padding: 27px 27px 0 27px;
     margin: 25px 92px;
     background-color: #ffffff;
@@ -783,21 +796,17 @@ footer.clearfix .logo {
   .question-and-means-payment {
     margin-bottom: 60px;
   }
-  .slider .owl-prev {
-    bottom: 140px;
-    right: 90px;
-  }
-  .slider .owl-next {
-    bottom: 180px;
-    left: 320px;
+  .question-and-means-payment .accordion-toggle {
+    text-decoration: underline;
+    -moz-text-decoration-style: dashed;
+    -webkit-text-decoration-style: dashed;
+            text-decoration-style: dashed;
   }
   .number-of-flights .circle {
     width: 90px;
     height: 90px;
     font-size: 23px;
-    border: 5px solid green;
     border-radius: 45px;
-    text-align: center;
   }
   .number-of-flights .circle span {
     position: relative;
@@ -813,7 +822,43 @@ footer.clearfix .logo {
     text-align: center;
   }
 }
+.reviews {
+  margin-bottom: 45px;
+}
+.contacts {
+  padding-bottom: 60px;
+  margin-top: 40px;
+}
+.contacts .mail,
+.contacts .link-social {
+  display: inline;
+}
+.footer-nav .sandwitch {
+  margin-top: 25px;
+}
 @media (min-width: 360px) and (max-width: 762px) {
+  .somit-promo {
+    /*
+
+      height: 350px;
+  background-position:  center 0px;
+  background-image: url(../pict/small/bg/bg-main.png);
+
+
+
+*/
+    height: 350px;
+    background-position: center 0px;
+    background-image: url(../pict/big/bg/bgbg.png);
+    background-repeat: no-repeat;
+  }
+  .somit-promo .promo-slogan {
+    margin-top: 55px;
+    font-size: 28px;
+  }
+  .somit-promo .hoverline {
+    visibility: hidden;
+  }
   .number-of-flights .row {
     margin-top: 35px;
   }
@@ -826,7 +871,6 @@ footer.clearfix .logo {
     width: 80px;
     height: 80px;
     font-size: 26px;
-    border: 6px solid #ffffff;
     border-radius: 40px;
     color: #ffffff;
     float: left;
@@ -843,12 +887,6 @@ footer.clearfix .logo {
     color: #ffffff;
     text-align: left;
   }
-}
-.promo-slogan {
-  font-family: "FiraSans-Medium";
-  font-size: 66px;
-  color: #fff;
-  margin: 0 auto;
 }
 .wrapper-main {
   margin: 0 auto;

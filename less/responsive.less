@@ -1,9 +1,11 @@
-/*       __ ____                    _____ __       ______ 
-     _/_//_/ /_  ___  ____  ___  / __(_) /______/ ____ \
-   _/_//_// __ \/ _ \/ __ \/ _ \/ /_/ / __/ ___/ / __ `/
- _/_//_/ / /_/ /  __/ / / /  __/ __/ / /_(__  ) / /_/ / 
-/_//_/  /_.___/\___/_/ /_/\___/_/ /_/\__/____/\ \__,_/  
-                                               \____/*/   
+//
+//        .d888b. .d888b. d8888b. 
+//        Y8' `88 Y8' `88     `88 
+//        `8bad88 `8bad88 .aaadP' 
+//            `88     `88 88'     
+//        d.  .88 d.  .88 88.     
+//        `8888P  `8888P  Y88888P       
+//                                            
 @media (min-width:992px){
   .promo-slogan {
     width: 60%;
@@ -34,75 +36,107 @@
       text-align: center;
     }
   }
-}
+} 
+//      
+//      d88888P .d8888P d8888b.                .d888b. .d888b. d8888b. 
+//          d8' 88'         `88                Y8' `88 Y8' `88     `88 
+//         d8'  88baaa. .aaadP'                `8bad88 `8bad88 .aaadP' 
+//        d8'   88` `88 88'        88888888        `88     `88 88'     
+//       d8'    8b. .d8 88.                    d.  .88 d.  .88 88.     
+//      d8'     `Y888P' Y88888P                `8888P  `8888P  Y88888P 
+//                                                                     
+//      
 @media (min-width:762px) and (max-width:992px){
-  .benefits {
-    .benefit-item{
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-    .benefit-label{
-      position: relative;
-      top: 15px;
+  .somit {
+    .sandwitch{
+      margin-top: 25px;
     }
   }
-  .briefly {
-    margin-top: 40px;
-    iframe {
-      margin-top: 35px;
-      margin-bottom: 15px;
-    }
-    margin-bottom: 20px;
+.benefits {
+  .benefit-item {
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
-  .slider{
+  .benefit-label {
+    position: relative;
+    top: 15px;
+  }
+}
+.briefly {
+  margin-top: 40px;
+  iframe {
     margin-top: 35px;
-    margin-bottom: 20px;
-    .owl-my {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
+    margin-bottom: 15px;
   }
-  .flight-plan {
-    margin-top: 30px;
+  margin-bottom: 20px;
+}
+.slider{
+  margin-top: 35px;
+  margin-bottom: 20px;
+  .owl-my {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
-  .instructors {
-    margin-top: 55px;
-    margin-bottom: 0px;
-      .instructor-icon {
-        background-image: url(../pict/big/icons/instructor-icon-sprite.png);
-        width: 74px;
-        position: absolute;
-        top: 120px;
-        left: 235px;
-        height: 75px;
-   }
+  & .owl-stage-outer {
+    height: 415px;
+  }
+  .owl-nav{
+    height: 0;
+  }
+  .owl-prev {
+    width: 20px;
+    bottom: 225px;
+    left: 20px;
+  }
+.owl-next {
+  width: 20px;
+  bottom: 270px;
+  left: 670px;
+  }
+}
+.flight-plan {
+  margin-top: 30px;
+}
+.instructors {
+  margin-top: 55px;
+  margin-bottom: 0px;
+  .instructor-icon {
+    background-image: url(../pict/big/icons/instructor-icon-sprite.png);
+    width: 74px;
+    position: absolute;
+    top: 120px;
+    left: 235px;
+    height: 75px;
+  }
   #pilot1 {
     .instructor-icon();
-    background-position: 0 0;
+      background-position: 0 0;
    }
    #pilot2 {
     .instructor-icon();
-    background-position: 0 0;
+      background-position: 0 0;
    }
    #dispatcher {
     .instructor-icon();
-    background-position: 147px 0;
+      background-position: 147px 0;
    }
    #technician {
     .instructor-icon();
     background-position: 73px 0;
-    }
   }
-  .reviews {
-    margin-top: 100px;
-  }
+}
+.reviews {
+  margin-top: 100px;
+}
 .price { 
   margin-top: 52px;
-  margin-bottom: 60px;
-  .price-form{ 
-  background-image: url(../pict/big/bg/bg-price.jpg);
+  margin-bottom: 40px;
+  .price-form { 
+    margin-top: 30px;
+    background-image: url(../pict/big/bg/bg-price.jpg);
   }
   form{
+    border-radius: @bdrs;
     padding: 27px 27px 0 27px;
     margin: 25px 92px;
     background-color: @white;
@@ -113,28 +147,19 @@
   }
 }
 .question-and-means-payment {
-  margin-bottom: 60px; 
-}
-.slider {
-  .owl-prev {
-    bottom: 140px;
-    right: 90px;
-  }
-  .owl-next {
-    bottom: 180px;
-    left: 320px;
+  margin-bottom: 60px;
+  .accordion-toggle{
+    text-decoration: underline;
+    -moz-text-decoration-style: dashed;
+    text-decoration-style: dashed;
   }
 }
-
-
 .number-of-flights {
   .circle  {
     width: 90px;
     height: 90px;
     font-size: @font-size+5;
-    border: 5px solid green;
     border-radius: 45px;
-    text-align: center;
     span { 
       position: relative;
       bottom: 40px;
@@ -151,7 +176,56 @@
     }
   }
 }
+.reviews {
+  margin-bottom: 45px;
+}
+.contacts {
+  padding-bottom: 60px;
+  margin-top: 40px;
+  .mail, .link-social{
+    display: inline;
+  }
+}
+ .footer-nav {
+    .sandwitch {
+      margin-top: 25px;
+    }
+  }
+
+//
+//        d8888b. .d8888P  a8888a                 d88888P .d8888P d8888b. 
+//            `88 88'     d8' ..8b                    d8' 88'         `88 
+//         aaad8' 88baaa. 88 .P 88                   d8'  88baaa. .aaadP' 
+//           `88 88` `88 88 d' 88    88888888      d8'   88` `88 88'     
+//            .88 8b. .d8 Y8'' .8P                 d8'    8b. .d8 88.     
+//        d88888P `Y888P'  Y8888P                 d8'     `Y888P' Y88888P 
+//
 @media (min-width:360px) and (max-width:762px){
+  .somit-promo {
+
+
+/*
+
+      height: 350px;
+  background-position:  center 0px;
+  background-image: url(../pict/small/bg/bg-main.png);
+
+
+
+*/
+
+      height: 350px;
+  background-position:  center 0px;
+  background-image: url(../pict/big/bg/bgbg.png);//background-image: url(../pict/big/bg/bg-top.jpg);
+  background-repeat: no-repeat;
+    .promo-slogan{
+      margin-top: 55px;
+      font-size: @font-size + 10;
+    }
+    .hoverline {
+      visibility: hidden;
+    }
+  }
   .number-of-flights {
     .row {
       margin-top: 35px;
@@ -162,7 +236,6 @@
       width: 80px;
       height: 80px;
       font-size: @font-size+8;
-      border: 6px solid @white;
       border-radius: 40px;
       color: @white;
       float: left;

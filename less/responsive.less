@@ -1,3 +1,13 @@
+@media (min-width: 1200px) {
+ .benefits {
+   .container {
+      overflow: hidden;
+    }
+    .benefit-item .wheel{
+      display: none;
+    }
+  }
+}
 //
 //        .d888b. .d888b. d8888b. 
 //        Y8' `88 Y8' `88     `88 
@@ -10,7 +20,12 @@
   .promo-slogan {
     width: 60%;
 }
-  .benefit-item:nth-child(2),.benefit-item:nth-child(3){
+ .benefits {
+  .benefit-item .wheel{
+    display: none;
+   }
+  }
+.benefit-item:nth-child(2),.benefit-item:nth-child(3){
     margin-top: 35px;
   }
   .number-of-flights {
@@ -47,11 +62,36 @@
 //                                                                     
 //      
 @media (min-width:762px) and (max-width:992px){
-  .somit {
-    .sandwitch{
-      margin-top: 25px;
-    }
+.somit-promo {
+  height: 645px;
+  background-position:  center 0px;
+  background-image: url(../pict/middle/bg/main-bg.png);//background-image: url(../pict/big/bg/bg-top.jpg);
+  background-repeat: no-repeat;
+   h1 {
+    font-size: @font-size + 26;
   }
+  #hoverline1{
+    bottom: 210px;
+    left: 160px;
+  }
+  #hoverline2{
+    bottom: 300px;
+    right: 190px;
+  }
+  #hoverline3{
+   bottom: 80px;
+    left: 240px;
+  }
+  #hoverline4{
+    bottom: 10px;
+    right: 180px;
+  }
+}
+.somit {
+  .sandwitch{
+    margin-top: 25px;
+  }
+}
 .benefits {
   .benefit-item {
     margin-top: 15px;
@@ -61,6 +101,9 @@
     position: relative;
     top: 15px;
   }
+  .benefit-item .wheel{
+    display: none;
+   }
 }
 .briefly {
   margin-top: 40px;
@@ -191,39 +234,70 @@
       margin-top: 25px;
     }
   }
-
 //
 //        d8888b. .d8888P  a8888a                 d88888P .d8888P d8888b. 
 //            `88 88'     d8' ..8b                    d8' 88'         `88 
 //         aaad8' 88baaa. 88 .P 88                   d8'  88baaa. .aaadP' 
-//           `88 88` `88 88 d' 88    88888888      d8'   88` `88 88'     
+//            `88 88` `88 88 d' 88    88888888      d8'   88` `88 88'     
 //            .88 8b. .d8 Y8'' .8P                 d8'    8b. .d8 88.     
 //        d88888P `Y888P'  Y8888P                 d8'     `Y888P' Y88888P 
 //
 @media (min-width:360px) and (max-width:762px){
+  .somit {
+    .sandwitch{
+      margin-top: 25px;
+    }
+  }
   .somit-promo {
-
-
-/*
-
-      height: 350px;
+  height: 645px;
   background-position:  center 0px;
-  background-image: url(../pict/small/bg/bg-main.png);
-
-
-
-*/
-
-      height: 350px;
-  background-position:  center 0px;
-  background-image: url(../pict/big/bg/bgbg.png);//background-image: url(../pict/big/bg/bg-top.jpg);
+  background-image: url(../pict/middle/bg/main-bg.png);//background-image: url(../pict/big/bg/bg-top.jpg);
   background-repeat: no-repeat;
-    .promo-slogan{
+  .promo-slogan{
       margin-top: 55px;
       font-size: @font-size + 10;
     }
     .hoverline {
       visibility: hidden;
+    }
+  }
+  .benefits {
+    margin-top: 20px;
+    margin-bottom: 22px;
+    .benefit-item {
+      font-size: @font-size;
+      margin-top:15px;
+      margin-bottom: 15px;
+    } 
+    .benefit-icon {
+      width: 40px;
+    }
+    .benefit-item .benefits-glass{
+    display: none;
+   }
+  }
+  .briefly {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .slider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .owl-controls {
+      height: 0;
+    }
+    .owl-prev {
+    position: relative;
+    bottom: 140px;
+    right: 220px;
+    }
+    .owl-next {
+      position: relative;
+      bottom: 189px;
+      left: 220px;
+    }
+    .owl-stage-outer {
+      height: 340px;
     }
   }
   .number-of-flights {
@@ -254,4 +328,96 @@
     }
   }
 }
+//      
+//                       d8888b. .d8888P  a8888a                 
+//                           `88 88'     d8' ..8b 
+//                        aaad8' 88baaa. 88 .P 88                    
+//            8888888        `88 88` `88 88 d' 88              
+//                           .88 8b. .d8 Y8'' .8P                   
+//                       d88888P `Y888P'  Y8888P                 
+//
+@media (min-width:0px) and (max-width:360px){
+  .somit-promo {
+    padding-top: 90px;
+    height: 360px;
+    background-position:  center 0px;
+    background-image: url(../pict/small/bg/bg-main.png);//background-image: url(../pict/big/bg/bg-top.jpg);
+    background-repeat: no-repeat;
+    .promo-slogan{
+      font-size: @font-size + 10;
+    }
+    a, a:after {
+       visibility: hidden;
+    }
+    .hoverline {
+      visibility: hidden;display: none;
+    }
+  }
+  .benefits{
+   .benefit-item .benefits-glass{
+    display: none;
+     }
+   }
+  .number-of-flights {
+    .row {
+      margin-top: 35px;
+    }
+    .circle  {
+      .format-text();
+      margin: 13px auto;
+      width: 80px;
+      height: 80px;
+      font-size: @font-size+8;
+      border-radius: 40px;
+      color: @white;
+      float: left;
+      padding-top: 25px;
+      display: inline-block;
+    }
+    p {
+      max-width: 250px;
+      overflow: hidden;
+      padding-top: 10px;
+      padding-left: 20px;
+      font-family: "FiraSans-Medium";
+      font-size: 24px;
+      color: @white;
+      text-align: left;
+    }
+  }
+  .benefits {
+    margin-top: 5px;
+    margin-bottom: 22px;
+    .benefit-item {
+      font-size: @font-size;
+      margin-top:45px;
+      margin-bottom: 15px;
+    } 
+    .benefit-icon {
+      width: 40px;
+    }
+  }
+  .briefly {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .slider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .owl-controls {
+      height: 0;
+    }
+    .owl-prev {
+    position: relative;
+    bottom: 140px;
+    right: 20px;
+    }
+    .owl-next {
+      position: relative;
+      bottom: 175px;
+      left: 20px;
+    }
+  }
+}
+
 

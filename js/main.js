@@ -52,39 +52,6 @@ $(document).ready(function(){
     });
   });
 
-/*
-
-$(document).ready(function() {
- 
-  $("#owl-reviews").owlCarousel({
- 
-      navigation : true, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 600,
-      singleItem:true
-  });
- 
-});
-
-*/
-
-
-//Timer 70days
-
-
-/*
-  var newYear = new Date(); 
-  newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1); 
-  $("#defaultCountdown").countdown({until: "+70d"});
-   //$('#padZeroes').countdown({until: liftoffTime, padZeroes: true});
-  $("#removeCountdown").click(function() { 
-      var destroy = $(this).text() === "Remove"; 
-      $(this).text(destroy ? "'Re-attach" : "Remove"); 
-      $("#defaultCountdown").countdown(destroy ? "destroy" : {until: newYear}); 
-  });
-
-*/
-
 
 //Timer
   var newYear = new Date(); 
